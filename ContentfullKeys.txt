@@ -1,0 +1,8 @@
+Space ID = "cllryrw4zmwf" 
+
+Content Delivery API - access token = "ZfiYLaLw3RCdkuTwTU8zqIthxJk7roIh_nStW8g9lG8"
+
+Content Preview API - access token  = "7m_ZaBlxhBhVDN-A6fRccUGK8cqMeUJqFqbp3Wt1Zjo"
+
+
+General Personal Access Token = "CFPAT-hj6rOSbSd4Q9AnrrK_7QuDE-nf5iqCZHZGPImmXa2nM"
