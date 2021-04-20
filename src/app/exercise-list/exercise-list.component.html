@@ -1,0 +1,14 @@
+<!-- ./app/product-list/product-list.component.html-->
+<ul class="u-listReset">
+    <li *ngFor="let exercise of exercises">    
+      <div class="video">
+        <video controls (click)="toggleVideo()" #videoPlayer>
+          <source src="{{exercise.fields.video.fields.file.url}}"  type="video/mp4" />
+          Browser not supported
+        </video>
+      </div>
+      {{ exercise.fields.name }}
+    </li>
+  </ul>
+
+  zxczxczx
