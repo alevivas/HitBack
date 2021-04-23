@@ -26,7 +26,7 @@ export class ContentfulService {
 
   getExercise(query?: object): Promise<Entry<any>[]> {
     return this.cdaClient.getEntries(Object.assign({
-      content_type: 'exercises'
+      content_type: 'exerciseInRoutine'
     }, query))
     .then(res => res.items);
   }

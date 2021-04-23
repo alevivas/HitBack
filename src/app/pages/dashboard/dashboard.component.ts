@@ -4,7 +4,8 @@ import { ContentfulService } from "src/app/contentful.service";
 
 @Component({
   selector: "app-dashboard",
-  templateUrl: "dashboard.component.html"
+  templateUrl: "dashboard.component.html",
+  styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
   public canvas : any;
@@ -15,9 +16,12 @@ export class DashboardComponent implements OnInit {
   public clicked: boolean = true;
   public clicked1: boolean = false;
   public clicked2: boolean = false;
-
-  public exercise: any;
+  
+  public excercisesInRoutine: any;
+  public exercises: any;
   public videoUrl : any;
+  public load: boolean = false;
+  public workout: any;
 
   @ViewChild('videoPlayer') videoplayer: any;
 
@@ -27,10 +31,9 @@ export class DashboardComponent implements OnInit {
 
     this.contentfulService.getExercise()
     .then((y) => {
-        const x = JSON.parse(JSON.stringify(y));
-        this.exercise = x[0].fields.exercises[0];
-        this.videoUrl = x[0].fields.exercises[0];
-        debugger;
+      debugger;
+        this.excercisesInRoutine = JSON.parse(JSON.stringify(y));
+        this.load = true;
     })
 
     var gradientChartOptionsConfigurationWithTooltipBlue: any = {
